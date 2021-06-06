@@ -397,6 +397,7 @@ class Brand(models.Model):
     seo_title = models.TextField(null=True, blank=True)
     seo_keywords = models.CharField(max_length=255, null=True, blank=True)
     seo_description = models.TextField(null=True, blank=True)
+    new_field = models.CharField(max_length=255, null=True, blank=True)
     status = models.BooleanField()
 
     custom_int_1 = models.IntegerField(null=True, blank=True)
