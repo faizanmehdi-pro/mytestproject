@@ -1,5 +1,6 @@
 venv/
 
+main.py
 # Compiled Java class files
 *.class
 
