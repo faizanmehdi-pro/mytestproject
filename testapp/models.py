@@ -389,7 +389,7 @@ class Currency(models.Model):
 class Brand(models.Model):
     company = models.ManyToManyField(Company, blank=True)
     title = models.CharField(max_length=255)
-    code_name = models.CharField(max_length=255, null=True, blank=True)
+    # code_name = models.CharField(max_length=255, null=True, blank=True)
     brand_logo = models.ImageField(upload_to='brand_logo/', null=True, blank=True)
     # short_description = models.TextField(null=True, blank=True)
     # address = models.TextField(null=True, blank=True)
@@ -399,6 +399,7 @@ class Brand(models.Model):
     seo_keywords = models.CharField(max_length=255, null=True, blank=True)
     seo_description = models.TextField(null=True, blank=True)
     new_field = models.CharField(max_length=255, null=True, blank=True)
+    second_one = models.CharField(max_length=255, null=True, blank=True)
     status = models.BooleanField()
 
     custom_int_1 = models.IntegerField(null=True, blank=True)
@@ -594,7 +595,7 @@ class WareHouse(models.Model):
     company = models.ForeignKey(Company, on_delete=models.PROTECT)
     # product = models.ForeignKey(Product, null=True, blank=True, on_delete=models.PROTECT)
     code_name = models.CharField(max_length=255)
-    address = models.TextField()
+    # address = models.TextField()
     phone = models.CharField(max_length=255)
     quantity = models.IntegerField(null=True, blank=True)
     status = models.BooleanField()
